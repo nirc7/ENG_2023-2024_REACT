@@ -19,9 +19,14 @@ export default class CCParent extends Component {
     console.log('componentDidMount');
   }
 
+  componentWillUnmount() {
+    console.log('unmounting...'); 
+  }
+
   render() {
     return (
       <div>
+        
         <p style={{ fontWeight: "bold", margin: 10 }}>names list:</p>
         <div className="list-group" style={{ width: "50%" }}>{this.listNumbers}</div>
 
