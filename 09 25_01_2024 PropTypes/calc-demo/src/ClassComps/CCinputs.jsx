@@ -18,6 +18,9 @@ export default class CCinputs extends Component {
           placeholder="enter a num1" /> <br />
         NUM2: <input type="number"
           onChange={(e) => this.setState({ num2: e.target.value })} /> <br />
+        name: <input type="text" value={this.state ?  this.state.name : ''}
+          onChange={(e) => this.setState({ name: e.target.value.toUpperCase() })} /> <br />
+        {this.state && this.state.name} <br />
         <button onClick={this.btnCalc}>Claculate</button>
       </div>
     )
