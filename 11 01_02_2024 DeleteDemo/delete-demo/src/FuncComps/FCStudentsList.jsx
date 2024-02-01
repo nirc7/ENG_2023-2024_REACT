@@ -11,6 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import IconButton from '@mui/material/IconButton';
 import DeleteIcon from '@mui/icons-material/Delete';
 
+import logo from "../assets/avatar1.jpg";
+//const logo = require("../assets/avatar1.jpg");
+
 export default function FCStudentsList(props) {
 
   let studentsListStr = props.students.map(stu =>
@@ -28,7 +31,7 @@ export default function FCStudentsList(props) {
         <ListItemAvatar>
           <Avatar
             alt={`Avatar n°`}
-            src={`avatar1.jpg`}
+            src={logo}
           />
         </ListItemAvatar>
         <ListItemText primary={`Line item `} />
