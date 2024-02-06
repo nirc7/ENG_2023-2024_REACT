@@ -30,12 +30,18 @@ export default class CCMain extends Component {
     });
   }
 
+  getStudent2Del = (id2Del) => {
+    console.log(id2Del);
+    let newStudents = this.state.students.filter(stu => stu.id !== id2Del);
+    this.setState({ students: newStudents });
+  }
+
 
   render() {
     return (
       <div>
         <FCInputs sendStudent={this.getStudent} /> <br />
-        <FCStudentsList students={this.state.students} />
+        <FCStudentsList students={this.state.students} sendStu2Del={this.getStudent2Del} />
       </div>
     )
   }
