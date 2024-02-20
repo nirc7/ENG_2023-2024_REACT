@@ -10,6 +10,7 @@ export default function ProductList(props) {
       name={product.name}
       price={product.price}
       img={product.img}
+      sendId2Buy={props.sendId2Buy} 
     />
   );
 

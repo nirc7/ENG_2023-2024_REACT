@@ -10,7 +10,7 @@ export default function CartItem(props) {
         padding: 2,
         margin: 5,
         border: '2px dashed'
-      }}>X</span>
+      }} onClick={() => props.sendId2Del(props.id)} >X</span>
     </div>
   )
 }
